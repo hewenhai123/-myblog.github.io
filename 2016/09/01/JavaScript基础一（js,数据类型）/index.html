@@ -68,7 +68,7 @@
 <link href="/myblog.github.io/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="js,引入,输出," />
+  <meta name="keywords" content="js,数据类型，基本数据类型，引入数据类型," />
 
 
 
@@ -84,40 +84,18 @@
 
 
 
-<meta name="description" content="页面的组成部分:
-HTML –&amp;gt; 超文本编辑语言  XHTML–&amp;gt;更严谨的HTML–&amp;gt; DTHML –&amp;gt;动态展示的HTML;
-CSS –&amp;gt; 层叠样式表;
-JavaScript –&amp;gt;轻量级的脚本编程语言
-
-js引入到页面中的几种方式：
-行内样式：和css一样写在行内（强烈不推荐，有安全问题）;
-内嵌式： ——js code——–;
-外链式：(标签内不能再编写代码，">
+<meta name="description" content="主要记录关于：js的数据类型、基本数据类型、引入数据类型、基本数据类型和引用数据类型的区别">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js基础一">
-<meta property="og:url" content="https://hewenhai123.github.io/myblog.github.io/2016/09/01/JavaScript基础一/index.html">
+<meta property="og:title" content="js基础一之数据类型">
+<meta property="og:url" content="https://hewenhai123.github.io/myblog.github.io/2016/09/01/JavaScript基础一（js,数据类型）/index.html">
 <meta property="og:site_name" content="海">
-<meta property="og:description" content="页面的组成部分:
-HTML –&amp;gt; 超文本编辑语言  XHTML–&amp;gt;更严谨的HTML–&amp;gt; DTHML –&amp;gt;动态展示的HTML;
-CSS –&amp;gt; 层叠样式表;
-JavaScript –&amp;gt;轻量级的脚本编程语言
-
-js引入到页面中的几种方式：
-行内样式：和css一样写在行内（强烈不推荐，有安全问题）;
-内嵌式： ——js code——–;
-外链式：(标签内不能再编写代码，">
-<meta property="og:updated_time" content="2016-10-07T12:25:06.296Z">
+<meta property="og:description" content="主要记录关于：js的数据类型、基本数据类型、引入数据类型、基本数据类型和引用数据类型的区别">
+<meta property="og:image" content="https://hewenhai123.github.io/myblog.github.io/img/img01.png">
+<meta property="og:updated_time" content="2016-10-07T13:16:38.472Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js基础一">
-<meta name="twitter:description" content="页面的组成部分:
-HTML –&amp;gt; 超文本编辑语言  XHTML–&amp;gt;更严谨的HTML–&amp;gt; DTHML –&amp;gt;动态展示的HTML;
-CSS –&amp;gt; 层叠样式表;
-JavaScript –&amp;gt;轻量级的脚本编程语言
-
-js引入到页面中的几种方式：
-行内样式：和css一样写在行内（强烈不推荐，有安全问题）;
-内嵌式： ——js code——–;
-外链式：(标签内不能再编写代码，">
+<meta name="twitter:title" content="js基础一之数据类型">
+<meta name="twitter:description" content="主要记录关于：js的数据类型、基本数据类型、引入数据类型、基本数据类型和引用数据类型的区别">
+<meta name="twitter:image" content="https://hewenhai123.github.io/myblog.github.io/img/img01.png">
 
 
 
@@ -138,9 +116,9 @@ js引入到页面中的几种方式：
 
 
 
-  <link rel="canonical" href="https://hewenhai123.github.io/myblog.github.io/2016/09/01/JavaScript基础一/"/>
+  <link rel="canonical" href="https://hewenhai123.github.io/myblog.github.io/2016/09/01/JavaScript基础一（js,数据类型）/"/>
 
-  <title> js基础一 | 海 </title>
+  <title> js基础一之数据类型 | 海 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -290,7 +268,7 @@ js引入到页面中的几种方式：
             
             
               
-                js基础一
+                js基础一之数据类型
               
             
           </h1>
@@ -328,8 +306,8 @@ js引入到页面中的几种方式：
 
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/myblog.github.io/categories/js/基础/" itemprop="url" rel="index">
-                    <span itemprop="name">基础</span>
+                  <a href="/myblog.github.io/categories/js/数据类型/" itemprop="url" rel="index">
+                    <span itemprop="name">数据类型</span>
                   </a>
                 </span>
 
@@ -361,51 +339,121 @@ js引入到页面中的几种方式：
       
 
       
-        <h3 id="页面的组成部分"><a href="#页面的组成部分" class="headerlink" title="页面的组成部分:"></a>页面的组成部分:</h3><ol>
-<li>HTML –&gt; 超文本编辑语言  XHTML–&gt;更严谨的HTML–&gt; DTHML –&gt;动态展示的HTML;</li>
-<li>CSS –&gt; 层叠样式表;</li>
-<li>JavaScript –&gt;轻量级的脚本编程语言</li>
-</ol>
-<h3 id="js引入到页面中的几种方式："><a href="#js引入到页面中的几种方式：" class="headerlink" title="js引入到页面中的几种方式："></a>js引入到页面中的几种方式：</h3><ol>
-<li>行内样式：和css一样写在行内（强烈不推荐，有安全问题）;</li>
-<li>内嵌式：<script> ——js code——–</script>;</li>
-<li>外链式：<script type="text/javascript" src="js.js"></script>(标签内不能再编写代码，不生效);</li>
-</ol>
-<h3 id="js的几种输出方式："><a href="#js的几种输出方式：" class="headerlink" title="js的几种输出方式："></a>js的几种输出方式：</h3><ol>
-<li>alert(“ 欢迎”) –&gt;在页面中弹出一个框里面展示内容 ==（会把输出的内容转换成字符串在输出）==;</li>
-<li>document.write(“欢迎”) –&gt;在文档中直接输出内容 ==（会把输出的内容转换成字符串在输出）==;</li>
-<li>console.log() –&gt;在控制台输出日志;</li>
-<li>console.dir();</li>
-<li>console.table;</li>
-<li>innerHTML:获取内容或者指定对象插入内容 ==（可以插入HTML结构）==;</li>
-<li>innerText: 获取内容或者指定对象插入内容 ==（会自动去除THML结构）==;</li>
-</ol>
-<h3 id="js的组成："><a href="#js的组成：" class="headerlink" title="js的组成："></a>js的组成：</h3><ol>
-<li>js是由三部分组成;</li>
+        <p>主要记录关于：js的数据类型、基本数据类型、引入数据类型、基本数据类型和引用数据类型的区别<br><a id="more"></a></p>
+<h3 id="js的数据类型"><a href="#js的数据类型" class="headerlink" title="js的数据类型"></a>js的数据类型</h3><ol>
+<li>前端的变量是松散类型的，不管什么样的数据类型定义变量都用  var</li>
+<li>JS中的数据类型分为：</li>
 </ol>
 <ul>
-<li>ECMAScript(4.0~5.0):定义了JS中的，语法、命名规范、变量、数据类型、操作语句等最为核心的基础;</li>
-<li>DOM: document object model 文档模型文档对象模型 提供了我们操作当前页面中元素标签所有的属性和方法;<br>document :文档对象;</li>
-<li>BOM: browser object model 浏览器对象模型 提供了js操作浏览器的所有属性和方法<br>window: 浏览器对象;</li>
+<li>基本数据类型（值类型）：</li>
+</ul>
+<p> number、string、boolean、null、undefined;</p>
+<ul>
+<li><p>引用数据类型：</p>
+<p> 对象数据类型：</p>
+<p>  {}、[]、/^$/……</p>
+<p> 函数数据类型：</p>
+<p>  function(){};</p>
+</li>
 </ul>
 <ol>
-<li>js 变量;</li>
+<li>JS中的数据类型检测方式：返回的是字符串</li>
 </ol>
 <ul>
-<li>变量（可变的量）一个名字，用来存储值的名字;</li>
-<li>常量（不可变量） 固定的值;</li>
-<li>JS中定义变量方式：  var 名字(变量名字) = 值  var num=12</li>
+<li><p>typeof –&gt;用来检测数据类型的运算符,检测对象数据类型返回值都是”object”</p>
+<p>  局限性：不能具体细分对象数据类型的值， </p>
+<p>  typeof value  typeof 12 –&gt;”number” ;</p>
+<p>  typeof  null —&gt; “object”; 因为null是空对象指针</p>
+</li>
+<li><p>instanceof;</p>
+</li>
+<li>constructor;</li>
+<li>Object.prototype.toString.call();</li>
+</ul>
+<h3 id="基本数据类型-number："><a href="#基本数据类型-number：" class="headerlink" title="基本数据类型  number："></a>基本数据类型  number：</h3><p>number ： 正数、负数、零、小数、NaN;</p>
+<ol>
+<li>NaN: not a number 不是一个数，但是它属于number 数据类型的 typeof NaN –&gt;”number”;</li>
+<li>NaN和NaN本身是不想等的;  NaN==NaN–&gt; false</li>
+<li>什么情况下出现NaN;</li>
+</ol>
+<ul>
+<li>数字+undefined=NaN;</li>
+<li>在无效的数学运算中;</li>
+<li>把其他的数据类型转换为number类型的时候不能正常转换的，结果都是NaN</li>
 </ul>
 <ol>
-<li>js 命名规范:</li>
+<li>如何把其他的数据类型转换为number；</li>
 </ol>
 <ul>
-<li>JS 中严格区分大小写;</li>
-<li>命名必须遵循”驼峰命名法”;</li>
-<li>不能使用关键字和保留字;</li>
-<li>关键字：在JS 中有特殊的用法的词 例如 var;<br>break  case  catch  continue  default  delete  do  else  finally  for  if  in  function  var  switch;</li>
-<li>保留字：未来可能会成为关键字的;<br>boolean byte char class int float goto long short import;</li>
+<li>Number (value):强制严格转换，值中不能包含非数字的字符，否则值为NaN</li>
+<li>parseInt / parseFloat（可识别小数点）:非严格转换从左到右一个一个的转换，只要遇到一个非有效的,则停止查找,不管后面是否还有数字都不在查找了</li>
+<li>isNaN(value)：检测一个值是否为有效数字，如果是有效数字返回false，如果不是有效数字返回true</li>
 </ul>
+<h3 id="基本数据类型-boolean："><a href="#基本数据类型-boolean：" class="headerlink" title="基本数据类型  boolean："></a>基本数据类型  boolean：</h3><p>布尔：只有  true   false 两个值;</p>
+<ol>
+<li>将其他的数据类型转换布尔类型只有：0 、NaN、null、undefined、””;</li>
+<li>如何将其他的数据类型转换成布尔类型;</li>
+</ol>
+<ul>
+<li>Boolean() 强制转换；</li>
+<li>!  先把其转换为布尔后让后再取反;</li>
+<li>!!  转换布尔类型;</li>
+<li>在条件中判断 if(1==1){} 首先判断1和1 是否相等，相等返回true，否则返回false；<br> if(1){} 如果条件中不是比较表达式也不是其他的东西，只是一个单独的值，首先把这个值转换为布尔类型，通过真假判断条件是否成立;</li>
+</ul>
+<ol>
+<li>null、undefined 的区别;</li>
+</ol>
+<ul>
+<li>两个都带都代表没有，但是有区别；</li>
+<li>null是现在没有以后会有，意料之中的没有;</li>
+<li>undefined 是意料之外的没有；</li>
+</ul>
+<h3 id="基本数据类型-string："><a href="#基本数据类型-string：" class="headerlink" title="基本数据类型  string："></a>基本数据类型  string：</h3><p>定义： 在js中只要是用 “  “/  ‘  ‘ 包起来的都是字符串，不管里面内容是什么；</p>
+<ol>
+<li>每一个字符串都是有零到多个字符组成的;</li>
+</ol>
+<ul>
+<li>每一个字符串都有自己的位置 “索引”;</li>
+<li>索引是从零开始的 str[索引];</li>
+</ul>
+<ol>
+<li>加法在JS中不一定是数学运算，和字符串想加时属于字符串拼接;</li>
+<li>乘、除、减、遇到字符串也是数学运算，把字符串转换为数字进行操作;</li>
+</ol>
+<h3 id="引用数据类型-对象："><a href="#引用数据类型-对象：" class="headerlink" title="引用数据类型  对象："></a>引用数据类型  对象：</h3><ol>
+<li><p>对象数据类型都是由属性名和属性值组成的；<br>一个对象是由多个属性名和属性值组成的（多组键值对 key：value）;</p>
+</li>
+<li><p>给已给对象增加/修改属性名和属性值：重要：JS规定一个对象中的属性名是不能够重复的，如果重复了，按照最后的一个对应的值为主;</p>
+</li>
+<li><p>增<br>obj.name=”名字”   obj[“name”]=”名字”</p>
+</li>
+<li><p>修<br>和增加一样如果原对象中存在相同的属性名，则修改，如果不存在则添加；<br>obj.name=”名字”   obj[“name”]=”名字”</p>
+</li>
+<li><p>获取：<br>obj.name  obj[“name”]</p>
+</li>
+<li><p>删除：<br>假删除：没有把属性删除，只是把属性值变为空;<br> obj.name=null  —-&gt;obj[“name”]=null<br>真删除：<br>delete  obj.name; —-&gt;delete  obj[“name”]</p>
+</li>
+<li>重点记忆：</li>
+</ol>
+<ul>
+<li>一个对象中的属性值可以是纯数字</li>
+<li>我们必须这样操作 obj[“7”]—&gt;obj[7]  </li>
+<li>引号可加可不加，非数字的必须加””</li>
+</ul>
+<h3 id="基本数据类型和引用数据类型的区别："><a href="#基本数据类型和引用数据类型的区别：" class="headerlink" title="基本数据类型和引用数据类型的区别："></a>基本数据类型和引用数据类型的区别：</h3><ol>
+<li>基本数据类型也叫做值类型，是直接操作值的;</li>
+<li>引用数据类型操作的是对内存空间的引用地址</li>
+</ol>
+<ul>
+<li>浏览器开始加载我们的HTML页面的时候，首先或形成一个”全局作用域”共js代码执行</li>
+<li>JS从上之下开始执行;</li>
+<li>引用数据类型的赋值操作基本数据类型第不一样的;</li>
+</ul>
+<p>a 开空间：遇到对象或者function时首先开一个新内存空间；</p>
+<p>b 分地址：浏览器给开辟的内存空间一个地址</p>
+<p>c 存数据：对象会将大括号中的内存错储，function会以字符串的形式存储</p>
+<p>d 在赋值：吧内存地址赋值给变量名;</p>
+<p><img src="/img/img01.png" alt="image"></p>
 
       
     </div>
@@ -430,9 +478,7 @@ js引入到页面中的几种方式：
           
             <a href="/myblog.github.io/tags/js/" rel="tag">#js</a>
           
-            <a href="/myblog.github.io/tags/引入/" rel="tag">#引入</a>
-          
-            <a href="/myblog.github.io/tags/输出/" rel="tag">#输出</a>
+            <a href="/myblog.github.io/tags/数据类型，基本数据类型，引入数据类型/" rel="tag">#数据类型，基本数据类型，引入数据类型</a>
           
         </div>
       
@@ -445,8 +491,8 @@ js引入到页面中的几种方式：
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/myblog.github.io/2016/10/07/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/myblog.github.io/2016/09/01/JavaScript基础一（js,引入,输出）/" rel="prev" title="js基础一">
+                js基础一 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -515,7 +561,7 @@ js引入到页面中的几种方式：
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/myblog.github.io/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -523,7 +569,7 @@ js引入到页面中的几种方式：
           
             <div class="site-state-item site-state-categories">
               <a href="/myblog.github.io/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -532,7 +578,7 @@ js引入到页面中的几种方式：
           
             <div class="site-state-item site-state-tags">
               <a href="/myblog.github.io/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -561,7 +607,7 @@ js引入到页面中的几种方式：
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#页面的组成部分"><span class="nav-number">1.</span> <span class="nav-text">页面的组成部分:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#js引入到页面中的几种方式："><span class="nav-number">2.</span> <span class="nav-text">js引入到页面中的几种方式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#js的几种输出方式："><span class="nav-number">3.</span> <span class="nav-text">js的几种输出方式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#js的组成："><span class="nav-number">4.</span> <span class="nav-text">js的组成：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#js的数据类型"><span class="nav-number">1.</span> <span class="nav-text">js的数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本数据类型-number："><span class="nav-number">2.</span> <span class="nav-text">基本数据类型  number：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本数据类型-boolean："><span class="nav-number">3.</span> <span class="nav-text">基本数据类型  boolean：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本数据类型-string："><span class="nav-number">4.</span> <span class="nav-text">基本数据类型  string：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用数据类型-对象："><span class="nav-number">5.</span> <span class="nav-text">引用数据类型  对象：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本数据类型和引用数据类型的区别："><span class="nav-number">6.</span> <span class="nav-text">基本数据类型和引用数据类型的区别：</span></a></li></ol></div>
             
           </div>
         </section>
