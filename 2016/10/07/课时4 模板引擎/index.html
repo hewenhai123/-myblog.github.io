@@ -84,15 +84,22 @@
 
 
 
-<meta name="description" content="多勤奋一点、多努力一点、多一点梦想">
-<meta property="og:type" content="website">
+<meta name="description" content="什么是模板引擎模板引擎（Template Engine）是一个将页面模板和要显示的数据结合起来生成 HTML 页面的工具。 如果说上面讲到的 express 中的路由控制方法相当于 MVC 中的控制器的话，那模板引擎就相当于 MVC 中的视图。
+ejsejs使用起来十分简单，而且与 express 集成良好。
+使用模板引擎前面我们通过以下两行代码设置了模板文件的存储位置和使用的模板引擎：12app">
+<meta property="og:type" content="article">
 <meta property="og:title" content="海">
-<meta property="og:url" content="https://hewenhai123.github.io/myblog.github.io/index.html">
+<meta property="og:url" content="https://hewenhai123.github.io/myblog.github.io/2016/10/07/课时4 模板引擎/index.html">
 <meta property="og:site_name" content="海">
-<meta property="og:description" content="多勤奋一点、多努力一点、多一点梦想">
+<meta property="og:description" content="什么是模板引擎模板引擎（Template Engine）是一个将页面模板和要显示的数据结合起来生成 HTML 页面的工具。 如果说上面讲到的 express 中的路由控制方法相当于 MVC 中的控制器的话，那模板引擎就相当于 MVC 中的视图。
+ejsejs使用起来十分简单，而且与 express 集成良好。
+使用模板引擎前面我们通过以下两行代码设置了模板文件的存储位置和使用的模板引擎：12app">
+<meta property="og:updated_time" content="2016-09-30T12:02:58.673Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="海">
-<meta name="twitter:description" content="多勤奋一点、多努力一点、多一点梦想">
+<meta name="twitter:description" content="什么是模板引擎模板引擎（Template Engine）是一个将页面模板和要显示的数据结合起来生成 HTML 页面的工具。 如果说上面讲到的 express 中的路由控制方法相当于 MVC 中的控制器的话，那模板引擎就相当于 MVC 中的视图。
+ejsejs使用起来十分简单，而且与 express 集成良好。
+使用模板引擎前面我们通过以下两行代码设置了模板文件的存储位置和使用的模板引擎：12app">
 
 
 
@@ -113,9 +120,9 @@
 
 
 
-  <link rel="canonical" href="https://hewenhai123.github.io/myblog.github.io/"/>
+  <link rel="canonical" href="https://hewenhai123.github.io/myblog.github.io/2016/10/07/课时4 模板引擎/"/>
 
-  <title> 海 </title>
+  <title>  | 海 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +143,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -245,9 +250,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -268,9 +273,6 @@
             
               
                 
-                <a class="post-title-link" href="/myblog.github.io/2016/10/07/课时4 模板引擎/" itemprop="url">
-                  未命名
-                </a>
               
             
           </h1>
@@ -310,9 +312,7 @@
       
 
       
-        
-          
-            <h3 id="什么是模板引擎"><a href="#什么是模板引擎" class="headerlink" title="什么是模板引擎"></a>什么是模板引擎</h3><p>模板引擎（Template Engine）是一个将页面模板和要显示的数据结合起来生成 HTML 页面的工具。 如果说上面讲到的 express 中的路由控制方法相当于 MVC 中的控制器的话，那模板引擎就相当于 MVC 中的视图。</p>
+        <h3 id="什么是模板引擎"><a href="#什么是模板引擎" class="headerlink" title="什么是模板引擎"></a>什么是模板引擎</h3><p>模板引擎（Template Engine）是一个将页面模板和要显示的数据结合起来生成 HTML 页面的工具。 如果说上面讲到的 express 中的路由控制方法相当于 MVC 中的控制器的话，那模板引擎就相当于 MVC 中的视图。</p>
 <h3 id="ejs"><a href="#ejs" class="headerlink" title="ejs"></a>ejs</h3><p>ejs使用起来十分简单，而且与 express 集成良好。</p>
 <h3 id="使用模板引擎"><a href="#使用模板引擎" class="headerlink" title="使用模板引擎"></a>使用模板引擎</h3><p>前面我们通过以下两行代码设置了模板文件的存储位置和使用的模板引擎：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">app.set(&apos;views&apos;, path.join(__dirname, &apos;views&apos;));</div><div class="line">app.set(&apos;view engine&apos;, &apos;ejs&apos;);</div></pre></td></tr></table></figure></p>
 <p>注意：我们通过 express -e zhufengpeixunblog 只是初始化了一个使用 ejs 模板引擎的工程而已，比如 node_modules 下添加了 ejs 模块，views 文件夹下有 index.ejs 。并不是说强制该工程只能使用 ejs 不能使用其他的模板引擎比如 jade，真正指定使用哪个模板引擎的是 app.set(‘view engine’, ‘ejs’); 。</p>
@@ -332,16 +332,20 @@
 <h5 id="b-ejs"><a href="#b-ejs" class="headerlink" title="b.ejs"></a>b.ejs</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">this is b.ejs</div></pre></td></tr></table></figure>
 <h5 id="最终-index-ejs-会显示："><a href="#最终-index-ejs-会显示：" class="headerlink" title="最终 index.ejs 会显示："></a>最终 index.ejs 会显示：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">this is a.ejs</div><div class="line">hello,world!</div><div class="line">this is b.ejs</div></pre></td></tr></table></figure>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -349,416 +353,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/myblog.github.io/2016/10/07/课时5 功能与设计/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/myblog.github.io/2016/10/07/课时5 功能与设计/" itemprop="url">
-                  未命名
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-07T18:26:49+08:00" content="2016-10-07">
-              2016-10-07
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="功能分析"><a href="#功能分析" class="headerlink" title="功能分析"></a>功能分析</h3><p>搭建一个简单的具有多人注册、登录、发表文章、登出功能的博客。</p>
-<h3 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h3><ul>
-<li>未登录：主页导航显示 首页、注册、登陆，下面显示已发表的文章、发表日期及作者。</li>
-<li>登陆后：主页导航显示 首页、发表文章、退出，下面显示已发表的文章、发表日期及作者。</li>
-<li>用户登录、注册、发表成功以及登出后都返回到主页。</li>
-</ul>
-<h3 id="未登录"><a href="#未登录" class="headerlink" title="未登录"></a>未登录</h3><p><img src="/logout.jpg" alt="image"></p>
-<h3 id="登陆后"><a href="#登陆后" class="headerlink" title="登陆后"></a>登陆后</h3><p><img src="/loged.jpg" alt="image"></p>
-<h3 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h3><p><img src="/publisharticle.jpg" alt="image"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/myblog.github.io/2016/10/07/课时3 路由介绍/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-07T18:26:49+08:00" content="2016-10-07">
-              2016-10-07
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><p>routes/index.js 中有以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var express = require(&apos;express&apos;);</div><div class="line">var router = express.Router();</div><div class="line"></div><div class="line">/* GET home page. */</div><div class="line">router.get(&apos;/&apos;, function(req, res, next) &#123;</div><div class="line">  res.render(&apos;index&apos;, &#123; title: &apos;Express&apos; &#125;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">module.exports = router;</div></pre></td></tr></table></figure></p>
-<p>这段代码的意思是当访问主页时，调用 ejs 模板引擎，来渲染 index.ejs 模版文件（即将 title 变量全部替换为字符串 Express），生成静态页面并显示在浏览器中。</p>
-<h3 id="路由配置"><a href="#路由配置" class="headerlink" title="路由配置"></a>路由配置</h3><p>express 封装了多种 http 请求方式，主要只使用 get 和 post 两种，即 app.get() 和 app.post() 。 app.get() 和 app.post() 的第一个参数都为请求的路径，第二个参数为处理请求的回调函数，回调函数有两个参数分别是 req 和 res，代表请求信息和响应信息 。路径请求及对应的获取路径有以下几种形式：</p>
-<h3 id="req-query-处理-get-请求，获取查询字符串"><a href="#req-query-处理-get-请求，获取查询字符串" class="headerlink" title="req.query(处理 get 请求，获取查询字符串)"></a>req.query(处理 get 请求，获取查询字符串)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">GET /index.html?name=zfpx</div><div class="line">req.query.name  -&gt; zfpx</div></pre></td></tr></table></figure>
-<h3 id="req-params-处理-name-形式的-get-或-post-请求，获取请求参数"><a href="#req-params-处理-name-形式的-get-或-post-请求，获取请求参数" class="headerlink" title="req.params(处理 /:name 形式的 get 或 post 请求，获取请求参数)"></a>req.params(处理 /:name 形式的 get 或 post 请求，获取请求参数)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// GET /user/zfpx </div><div class="line">req.params.name -&gt; zfpx</div></pre></td></tr></table></figure>
-<h3 id="req-body-处理-post-请求，获取-post-请求体"><a href="#req-body-处理-post-请求，获取-post-请求体" class="headerlink" title="req.body(处理 post 请求，获取 post 请求体)"></a>req.body(处理 post 请求，获取 post 请求体)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">req.body.name</div></pre></td></tr></table></figure>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/myblog.github.io/2016/10/07/JavaScript基础一/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-07T15:18:54+08:00" content="2016-10-07">
-              2016-10-07
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>1.页面的组成部分:<br>1.HTML –&gt; 超文本编辑语言  XHTML–&gt;更严谨的HTML–&gt; DTHML –&gt;动态展示的HTML;<br>2.CSS –&gt; 层叠样式表;<br>3.JavaScript –&gt;轻量级的脚本编程语言<br>2.js引入到页面中的几种方式：<br>1.行内样式：和css一样写在行内（强烈不推荐，有安全问题）;<br>2.内嵌式：<script> ——js code——–</script>;<br>3.外链式：<script type="text/javascript" src="js.js"></script>(标签内不能再编写代码，不生效);</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/myblog.github.io/2016/10/07/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-07T08:28:01+08:00" content="2016-10-07">
-              2016-10-07
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -766,6 +386,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -785,8 +409,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/myblog.github.io/images/avatar.gif"
@@ -822,6 +455,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是模板引擎"><span class="nav-number">1.</span> <span class="nav-text">什么是模板引擎</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ejs"><span class="nav-number">2.</span> <span class="nav-text">ejs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用模板引擎"><span class="nav-number">3.</span> <span class="nav-text">使用模板引擎</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#index-ejs"><span class="nav-number">3.0.1.</span> <span class="nav-text">index.ejs</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hello"><span class="nav-number">4.</span> <span class="nav-text">hello</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hello-1"><span class="nav-number">5.</span> <span class="nav-text">hello</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面布局"><span class="nav-number">6.</span> <span class="nav-text">页面布局</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#index-ejs-1"><span class="nav-number">6.0.1.</span> <span class="nav-text">index.ejs</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#a-ejs"><span class="nav-number">6.0.2.</span> <span class="nav-text">a.ejs</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#b-ejs"><span class="nav-number">6.0.3.</span> <span class="nav-text">b.ejs</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#最终-index-ejs-会显示："><span class="nav-number">6.0.4.</span> <span class="nav-text">最终 index.ejs 会显示：</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -925,6 +569,10 @@
 
 
   
+  <script type="text/javascript" src="/myblog.github.io/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/myblog.github.io/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
