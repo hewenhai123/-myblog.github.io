@@ -84,15 +84,22 @@
 
 
 
-<meta name="description" content="多勤奋一点、多努力一点、多一点梦想">
-<meta property="og:type" content="website">
+<meta name="description" content="增加工具方法在routes/users.js中增加md5加密的工具方法
+123function md5(val)&amp;#123;    return require(&amp;apos;crypto&amp;apos;).createHash(&amp;apos;md5&amp;apos;).update(val).digest(&amp;apos;hex&amp;apos;);&amp;#125;
+用户注册路由注册表单的form中action=”/use">
+<meta property="og:type" content="article">
 <meta property="og:title" content="海">
-<meta property="og:url" content="https://hewenhai123.github.io/myblog.github.io/index.html">
+<meta property="og:url" content="https://hewenhai123.github.io/myblog.github.io/2016/10/07/课时12 用户注册登陆/index.html">
 <meta property="og:site_name" content="海">
-<meta property="og:description" content="多勤奋一点、多努力一点、多一点梦想">
+<meta property="og:description" content="增加工具方法在routes/users.js中增加md5加密的工具方法
+123function md5(val)&amp;#123;    return require(&amp;apos;crypto&amp;apos;).createHash(&amp;apos;md5&amp;apos;).update(val).digest(&amp;apos;hex&amp;apos;);&amp;#125;
+用户注册路由注册表单的form中action=”/use">
+<meta property="og:updated_time" content="2016-10-04T15:13:14.660Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="海">
-<meta name="twitter:description" content="多勤奋一点、多努力一点、多一点梦想">
+<meta name="twitter:description" content="增加工具方法在routes/users.js中增加md5加密的工具方法
+123function md5(val)&amp;#123;    return require(&amp;apos;crypto&amp;apos;).createHash(&amp;apos;md5&amp;apos;).update(val).digest(&amp;apos;hex&amp;apos;);&amp;#125;
+用户注册路由注册表单的form中action=”/use">
 
 
 
@@ -113,9 +120,9 @@
 
 
 
-  <link rel="canonical" href="https://hewenhai123.github.io/myblog.github.io/"/>
+  <link rel="canonical" href="https://hewenhai123.github.io/myblog.github.io/2016/10/07/课时12 用户注册登陆/"/>
 
-  <title> 海 </title>
+  <title>  | 海 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +143,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -245,9 +250,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -268,9 +273,6 @@
             
               
                 
-                <a class="post-title-link" href="/myblog.github.io/2016/10/07/课时12 用户注册登陆/" itemprop="url">
-                  未命名
-                </a>
               
             
           </h1>
@@ -310,25 +312,27 @@
       
 
       
-        
-          
-            <h3 id="增加工具方法"><a href="#增加工具方法" class="headerlink" title="增加工具方法"></a>增加工具方法</h3><p>在routes/users.js中增加md5加密的工具方法</p>
+        <h3 id="增加工具方法"><a href="#增加工具方法" class="headerlink" title="增加工具方法"></a>增加工具方法</h3><p>在routes/users.js中增加md5加密的工具方法</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function md5(val)&#123;</div><div class="line">    return require(&apos;crypto&apos;).createHash(&apos;md5&apos;).update(val).digest(&apos;hex&apos;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="用户注册路由"><a href="#用户注册路由" class="headerlink" title="用户注册路由"></a>用户注册路由</h3><p>注册表单的form中action=”/users/reg”,所以我们要实现用户注册的路由 修改 routes/users.js 中的 router.post(‘/reg’…</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">router.post(&apos;/reg&apos;, function (req, res) &#123;</div><div class="line">  就是 POST 请求信息解析过后的对象，例如我们要访问 POST 来的表单内的 name=&quot;username&quot; 域的值，只需访问 req.body[&apos;username&apos;] 或 req.body.username 即可。</div><div class="line">  var user = req.body;//</div><div class="line">  if(user.password != user.repassword)&#123;</div><div class="line">    req.flash(&apos;error&apos;,&apos;两次输入的密码不一致&apos;);</div><div class="line">    return res.redirect(&apos;/users/reg&apos;);</div><div class="line">  &#125;</div><div class="line">  delete user.repassword; 由于repassword不需要保存，所以可以删除</div><div class="line">  user.password = md5(user.password); 对密码进行md5加密</div><div class="line">  user.avatar = &quot;https://secure.gravatar.com/avatar/&quot;+md5(user.email)+&quot;?s=48&quot;; 得到用户的头像</div><div class="line">  new Model(&apos;User&apos;)(user).save(function(err,user)&#123;</div><div class="line">    if(err)&#123;</div><div class="line">      req.flash(&apos;error&apos;,err);</div><div class="line">      return res.redirect(&apos;/users/reg&apos;);</div><div class="line">    &#125;</div><div class="line">    req.session.user = user;//用户信息存入 session</div><div class="line">    res.redirect(&apos;/&apos;);//注册成功后返回主页</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h3 id="用户登陆路由"><a href="#用户登陆路由" class="headerlink" title="用户登陆路由"></a>用户登陆路由</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">router.post(&apos;/login&apos;, function (req, res) &#123;</div><div class="line">    var user = req.body;</div><div class="line">    user.password = md5(user.password);</div><div class="line">    Model(&apos;User&apos;).findOne(user,function(err,user)&#123;</div><div class="line">        if(err)&#123;</div><div class="line">            req.flash(&apos;error&apos;,err);</div><div class="line">            return res.redirect(&apos;/users/login&apos;);</div><div class="line">        &#125;</div><div class="line">        req.session.user = user;//用户信息存入 session</div><div class="line">        res.redirect(&apos;/&apos;);//注册成功后返回主页</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h3 id="用户登出"><a href="#用户登出" class="headerlink" title="用户登出"></a>用户登出</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">router.get(&apos;/logout&apos;, function (req, res) &#123;</div><div class="line">    req.session.user = null;//用户信息存入 session</div><div class="line">    res.redirect(&apos;/&apos;);//注册成功后返回主页</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -336,121 +340,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/myblog.github.io/2016/10/07/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/myblog.github.io/2016/10/07/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-07T08:28:01+08:00" content="2016-10-07">
-              2016-10-07
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -458,6 +373,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -477,8 +396,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/myblog.github.io/images/avatar.gif"
@@ -514,6 +442,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#增加工具方法"><span class="nav-number">1.</span> <span class="nav-text">增加工具方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户注册路由"><span class="nav-number">2.</span> <span class="nav-text">用户注册路由</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户登陆路由"><span class="nav-number">3.</span> <span class="nav-text">用户登陆路由</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户登出"><span class="nav-number">4.</span> <span class="nav-text">用户登出</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -617,6 +556,10 @@
 
 
   
+  <script type="text/javascript" src="/myblog.github.io/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/myblog.github.io/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
