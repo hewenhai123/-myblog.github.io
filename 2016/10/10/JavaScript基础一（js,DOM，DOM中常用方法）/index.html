@@ -68,7 +68,7 @@
 <link href="/myblog.github.io/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="js,DOM，常用方法," />
 
 
 
@@ -84,15 +84,16 @@
 
 
 
-<meta name="description" content="多勤奋一点、多努力一点、多一点梦想">
-<meta property="og:type" content="website">
-<meta property="og:title" content="海">
-<meta property="og:url" content="https://hewenhai123.github.io/myblog.github.io/tags/输出/index.html">
+<meta name="description" content="主要记录关于：js中DOM的常用的方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js基础一之数据类型">
+<meta property="og:url" content="https://hewenhai123.github.io/myblog.github.io/2016/10/10/JavaScript基础一（js,DOM，DOM中常用方法）/index.html">
 <meta property="og:site_name" content="海">
-<meta property="og:description" content="多勤奋一点、多努力一点、多一点梦想">
+<meta property="og:description" content="主要记录关于：js中DOM的常用的方法">
+<meta property="og:updated_time" content="2016-10-10T11:38:33.286Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="海">
-<meta name="twitter:description" content="多勤奋一点、多努力一点、多一点梦想">
+<meta name="twitter:title" content="js基础一之数据类型">
+<meta name="twitter:description" content="主要记录关于：js中DOM的常用的方法">
 
 
 
@@ -113,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="https://hewenhai123.github.io/myblog.github.io/tags/输出/"/>
+  <link rel="canonical" href="https://hewenhai123.github.io/myblog.github.io/2016/10/10/JavaScript基础一（js,DOM，DOM中常用方法）/"/>
 
-  <title> 标签: 输出 | 海 </title>
+  <title> js基础一之数据类型 | 海 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,7 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,46 +245,165 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        输出
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                js基础一之数据类型
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-10T00:00:00+08:00" content="2016-10-10">
+              2016-10-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/myblog.github.io/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/myblog.github.io/categories/js/DOM，常用方法/" itemprop="url" rel="index">
+                    <span itemprop="name">DOM，常用方法</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>主要记录关于：js中DOM的常用的方法<br><a id="more"></a></p>
+<h3 id="关于DOM中常用的方法："><a href="#关于DOM中常用的方法：" class="headerlink" title="关于DOM中常用的方法："></a>关于DOM中常用的方法：</h3><ol>
+<li>document.getElementById(“”)–&gt;通过id来获取一个元素；<br>我们获取的结果是一个对象数据类型的值，所以我们把获取结果也叫作”元素对象”.<br>每一个对象数据类型都是由多组键值对组成的,所以我们的oDiv中也应该存在多组键值对</li>
+<li>className: 获取设置类名<br>oDiv.className —-&gt;oDiv[“className”]</li>
+<li>id: 获取或者设置元素的对象的ID值</li>
+<li>innerHTML：获取或者设置元素的内容</li>
+<li>onclick：绑定点击事件</li>
+<li>onmouseover：鼠标移入</li>
+<li>onmouseout：鼠标移除</li>
+<li>style: 获取和设置元素的行内样式  CSSStyleDeclaration</li>
+</ol>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/myblog.github.io/2016/09/01/JavaScript基础一（js,引入,输出）/" itemprop="url">
-              
-                <span itemprop="name">js基础一</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-01T00:00:00+08:00"
-              content="2016-09-01" >
-          09-01
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/myblog.github.io/tags/js/" rel="tag">#js</a>
+          
+            <a href="/myblog.github.io/tags/DOM，常用方法/" rel="tag">#DOM，常用方法</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/myblog.github.io/2016/10/07/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -291,6 +411,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -310,8 +434,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/myblog.github.io/images/avatar.gif"
@@ -361,6 +494,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于DOM中常用的方法："><span class="nav-number">1.</span> <span class="nav-text">关于DOM中常用的方法：</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -464,6 +608,10 @@
 
 
   
+  <script type="text/javascript" src="/myblog.github.io/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/myblog.github.io/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
