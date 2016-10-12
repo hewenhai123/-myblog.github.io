@@ -68,7 +68,7 @@
 <link href="/myblog.github.io/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="js,for,break，continue，for_in," />
 
 
 
@@ -84,15 +84,16 @@
 
 
 
-<meta name="description" content="多勤奋一点、多努力一点、多一点梦想">
-<meta property="og:type" content="website">
-<meta property="og:title" content="海">
-<meta property="og:url" content="https://hewenhai123.github.io/myblog.github.io/categories/js/三个判断/index.html">
+<meta name="description" content="主要记录关于：for循环、for in 循环、break、continue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js基础一之for循环">
+<meta property="og:url" content="https://hewenhai123.github.io/myblog.github.io/2016/10/12/js基础一之for循环/index.html">
 <meta property="og:site_name" content="海">
-<meta property="og:description" content="多勤奋一点、多努力一点、多一点梦想">
+<meta property="og:description" content="主要记录关于：for循环、for in 循环、break、continue">
+<meta property="og:updated_time" content="2016-10-12T12:57:49.698Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="海">
-<meta name="twitter:description" content="多勤奋一点、多努力一点、多一点梦想">
+<meta name="twitter:title" content="js基础一之for循环">
+<meta name="twitter:description" content="主要记录关于：for循环、for in 循环、break、continue">
 
 
 
@@ -113,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="https://hewenhai123.github.io/myblog.github.io/categories/js/三个判断/"/>
+  <link rel="canonical" href="https://hewenhai123.github.io/myblog.github.io/2016/10/12/js基础一之for循环/"/>
 
-  <title> 分类: 三个判断 | 海 </title>
+  <title> js基础一之for循环 | 海 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,7 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,47 +245,206 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        三个判断
-        <small>分类</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                js基础一之for循环
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-12T00:00:00+08:00" content="2016-10-12">
+              2016-10-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/myblog.github.io/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/myblog.github.io/categories/js/基础/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/myblog.github.io/categories/js/基础/for/" itemprop="url" rel="index">
+                    <span itemprop="name">for</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/myblog.github.io/categories/js/基础/for/break，continue/" itemprop="url" rel="index">
+                    <span itemprop="name">break，continue</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>主要记录关于：for循环、for in 循环、break、continue<br><a id="more"></a></p>
+<h3 id="for循环："><a href="#for循环：" class="headerlink" title="for循环："></a>for循环：</h3><ol>
+<li>for循环结构：</li>
+</ol>
+<ul>
+<li>定义循环起始的值;</li>
+<li>设置循环能够执行的条件;</li>
+<li>执行循环体中的内容;</li>
+<li>执行最后的累加操作</li>
+</ul>
+<ol>
+<li>break  continue：</li>
+</ol>
+<ul>
+<li>在循环体中我们会遇到两个关键字 break  contiune</li>
+<li>不管是哪一个，循环体中一旦遇到break  contiune 在循环体中的两个关键字后面的代码都不在执行了；</li>
+<li>break ：结束整个循环，并且i++也不在执行了</li>
+<li>continue： 结束本轮循环，继续执行下一轮循环，i++还是要执行的。</li>
+</ul>
+<ol>
+<li>for  in ：</li>
+</ol>
+<ul>
+<li>遍历一个对象中所有的属性名和属性值；</li>
+<li>对象中存在多少属性名和属性值，我们的循环就执行多少次<br>console.log(key):每一次循环key存储的值是属性名<br>console.log(obj[key]):在for in循环中由于不知道属性名是否是纯数字，所以不能使用obj.key的方式‘<br>console.log(obj[key]): 获取的是每一个属性名所对应的属性值。<br>如果出现纯数字的属性名，我们的循环顺序是什么样的？<br>==如果出现数字的话会循环数字，并且从小到大排序，其他属性名，安装照原样在数字之后循环。==</li>
+</ul>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/myblog.github.io/2016/10/10/JavaScript基础一（js,if，else，三个判断）/" itemprop="url">
-              
-                <span itemprop="name">js基础一</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-10T00:00:00+08:00"
-              content="2016-10-10" >
-          10-10
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/myblog.github.io/tags/js/" rel="tag">#js</a>
+          
+            <a href="/myblog.github.io/tags/for/" rel="tag">#for</a>
+          
+            <a href="/myblog.github.io/tags/break，continue，for-in/" rel="tag">#break，continue，for_in</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/myblog.github.io/2016/10/10/JavaScript基础一（js,if，else，三个判断）/" rel="next" title="js基础一">
+                <i class="fa fa-chevron-left"></i> js基础一
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </section>
 
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -292,6 +452,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -311,8 +475,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/myblog.github.io/images/avatar.gif"
@@ -362,6 +535,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#for循环："><span class="nav-number">1.</span> <span class="nav-text">for循环：</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -465,6 +649,10 @@
 
 
   
+  <script type="text/javascript" src="/myblog.github.io/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/myblog.github.io/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
